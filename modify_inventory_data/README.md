@@ -2,25 +2,25 @@
 ODM wants to change all the nodes inventory on opensync NOC with their own logic
 
 # ODM's rule
-OS3411 MAC rules since 3.2.7b4: \n
-Label MAC is the root MAC to calculate all the others. \n
-eth0 MAC = label MAC \n
-eth1 MAC = label MAC first octet + 2\n
-eth2 MAC = label MAC first octet + 6 \n
-Bluetooth MAC = label MAC first octet + 10 \n
-2.4G WiFi(wifi1) MAC = label MAC last octet + 1 \n
-5G WiFi(wifi0) MAC = label MAC last octet + 2   \n
-6G WiFi(wifi2) MAC = label MAC last octet + 3   \n
+OS3411 MAC rules since 3.2.7b4: \
+Label MAC is the root MAC to calculate all the others. \
+eth0 MAC = label MAC \
+eth1 MAC = label MAC first octet + 2\
+eth2 MAC = label MAC first octet + 6 \
+Bluetooth MAC = label MAC first octet + 10 \
+2.4G WiFi(wifi1) MAC = label MAC last octet + 1 \
+5G WiFi(wifi0) MAC = label MAC last octet + 2   \
+6G WiFi(wifi2) MAC = label MAC last octet + 3   \
 
-Example:        \n
-LABEL_MAC=FC:20:2E:77:91:50     \n
-ETH0_MAC=FC:20:2E:77:91:50      \n
-ETH1_MAC=FE:20:2E:77:91:50      \n
-ETH2_MAC=02:20:2E:77:91:50      \n
-BLE_MAC=06:20:2E:77:91:50       \n
-24G_MAC=FC:20:2E:77:91:51       \n
-5G_MAC=FC:20:2E:77:91:52        \n
-6G_MAC=FC:20:2E:77:91:53        \n
+Example:        \
+LABEL_MAC=FC:20:2E:77:91:50     \
+ETH0_MAC=FC:20:2E:77:91:50      \
+ETH1_MAC=FE:20:2E:77:91:50      \
+ETH2_MAC=02:20:2E:77:91:50      \
+BLE_MAC=06:20:2E:77:91:50       \
+24G_MAC=FC:20:2E:77:91:51       \
+5G_MAC=FC:20:2E:77:91:52        \
+6G_MAC=FC:20:2E:77:91:53        \
 
 # Usage:
 - login http://inventory-development.shared.us-west-2.aws.plume.tech:3005/explorer/
